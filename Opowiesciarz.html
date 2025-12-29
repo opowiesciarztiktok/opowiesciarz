@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Opowieściarz</title>
+<style>
+/* --- Podstawy --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Nagłówek --- */
+header {
+    background: #1a1a1a;
+    padding: 25px;
+    font-size: 34px;
+    font-weight: bold;
+    animation: headerWave 3s infinite ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes headerWave {
+    0% { transform: translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateY(-3px) rotate(0.6deg) scale(1.02); }
+    50% { transform: translateY(0) rotate(0deg) scale(1); }
+    75% { transform: translateY(3px) rotate(-0.6deg) scale(1.02); }
+    100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+/* --- Główna sekcja --- */
+main {
+    margin-top: 50px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* --- Kontener przycisków --- */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* --- Przyciski --- */
+.button {
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* Hover efekt */
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255,255,255,0.25);
+}
+
+/* --- Magiczny przycisk (Szkoła Magii) --- */
+.button.magic {
+    background: linear-gradient(135deg,#3a0066,#8a00ff);
+    color: white;
+    box-shadow: 0 6px 18px rgba(138,0,255,0.25);
+}
+.button.magic:hover {
+    background: linear-gradient(135deg,#8a00ff,#c77dff);
+}
+
+/* --- Brawl Stars przycisk --- */
+.button.brawl {
+    background: linear-gradient(135deg,#ffb300,#ff0055);
+    color: white;
+    box-shadow: 0 6px 18px rgba(255,51,119,0.25);
+}
+.button.brawl:hover {
+    background: linear-gradient(135deg,#ff0055,#ffb300);
+}
+
+/* --- Neonowy przycisk (Hakerzy) --- */
+.button.hacker {
+    background: linear-gradient(135deg,#00ffcc,#006666);
+    color: white;
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+.button.hacker:hover {
+    background: linear-gradient(135deg,#00cccc,#00ffcc);
+    box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffcc;
+}
+
+/* --- Nieaktywny przycisk --- */
+.button.disabled {
+    background: #666;
+    pointer-events: none;
+    box-shadow: none;
+    opacity: 0.95;
+}
+.button.disabled::after{
+    content: "✖";
+    color: #ff4444;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* --- Responsywność --- */
+@media (max-width:420px){
+    .buttons { max-width: 92%; gap: 12px; }
+    .button { padding: 14px; font-size: 16px; }
+    header { font-size: 30px; padding: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>Opowieściarz</header>
+
+<main>
+    <div class="subtitle">Wybierz serię:</div>
+
+    <div class="buttons">
+        <a class="button magic" href="szkola-magii-x.html">SZKOŁA MAGII X</a>
+        <a class="button brawl" href="zycie-zadymiarzy-z-brawlstars.html">Życie zadymiarzy Brawl Stars</a>
+        <a class="button hacker" href="hakerzyrozdzialy.html"true">Hakerzy</a>
+    </div>
+</main>
+
+</body>
+</html>

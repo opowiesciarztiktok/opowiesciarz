@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bohaterowie – Szkoła Magii X</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0e0e0e;
+            color: white;
+            text-align: center;
+            animation: pageFade 0.6s ease both;
+            padding: 20px;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            animation: headerWave 3s infinite ease-in-out;
+            transform-origin: center;
+            margin-bottom: 30px;
+        }
+
+        .toggle-button {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 12px auto;
+            background: #ff0055;
+            color: white;
+            border: none;
+            padding: 14px 0;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+            text-align: center;
+        }
+
+        .toggle-button:hover {
+            background: #ff3377;
+            transform: scale(1.03);
+        }
+
+        .toggle-content {
+            display: none;
+            max-width: 400px;
+            margin: 0 auto 15px auto;
+            background: #1a1a1a;
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: #ddd;
+            text-align: left;
+        }
+
+        .back {
+            margin-top: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #ff77aa;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: #1a1a1a;
+            transition: 0.2s;
+        }
+
+        .back a:hover {
+            background: #ff0055;
+            color: white;
+        }
+
+        @keyframes pageFade {
+            from { opacity: 0; transform: translateY(10px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes headerWave {
+            0% { transform: translateY(0) rotate(0deg) scale(1);}
+            25% { transform: translateY(-3px) rotate(0.6deg) scale(1.02);}
+            50% { transform: translateY(0) rotate(0deg) scale(1);}
+            75% { transform: translateY(3px) rotate(-0.6deg) scale(1.02);}
+            100% { transform: translateY(0) rotate(0deg) scale(1);}
+        }
+
+        @media(max-width: 420px){
+            .toggle-button, .toggle-content { max-width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>BOHATEROWIE</header>
+
+<!-- Przyciski rozwijane -->
+<button class="toggle-button">Madison</button>
+<div class="toggle-content">
+    <p>Imię: Madison<br>
+Nazwisko: Everlyn<br>
+Wygląd zewnętrzny: Madison jest średniego wzrostu, smukła, z lekko atletyczną sylwetką, co pozwala jej sprawnie poruszać się zarówno po korytarzach szkoły, jak i podczas ćwiczeń magicznych. Ma długie, ciemne włosy, często splecione w luźny warkocz lub kucyk, które wpadają jej czasem do twarzy. Jej oczy są intensywnie zielone, wyraziste, z lekko złotymi refleksami przy mocniejszym świetle. Twarz ma delikatną, o wyraźnie zarysowanych kościach policzkowych i subtelnym, pełnym ustach. Jej spojrzenie jest uważne, czasem melancholijne, ale w chwilach zdecydowania – pełne determinacji.<br>
+Ubiór: W codziennym szkolnym stroju nosi granatową szatę z haftowanym złotym symbolem X Szkoły Magii X, do tego prostą, praktyczną tunikę i elastyczne buty umożliwiające szybkie poruszanie się. Pod szatą często ma pas z miejscem na księgi, eliksiry i drobne artefakty. Na lekcjach zaklęć bojowych zakłada rękawice ochronne i czasem opaskę na nadgarstki, które pomagają w kontrolowaniu energii magicznej.<br>
+Charakter i upodobania: Madison jest odważna, ciekawa świata i niezależna. Lubi wyzwania i odkrywanie nowych zaklęć oraz artefaktów. Interesuje się historią magii, starymi księgami i pradawnymi runami. Ceni przyjaźń, choć trudno jej otworzyć się na nowe osoby, dopóki nie poczuje, że można im zaufać. Ma też silne poczucie sprawiedliwości i często wkracza w sytuacje, w których ktoś potrzebuje pomocy. Lubi spokojne poranki z książką, ale równie dobrze czuje się w środku akcji podczas lekcji zaklęć bojowych czy eksplorowania tajemniczych ruin.
+Dodatkowe cechy: Madison nosi niewielki naszyjnik z symbolem ochronnym, który dostała od rodziców. Jest to jej prywatna talizman, który często dotyka, gdy czuje niepokój lub zagrożenie. Od czasu uderzenia czarnym pociskiem, na jej ramieniu pojawił się mroczny symbol, który powoli przejmuje nad nią kontrolę, wpływając na jej sny i chwilową zmianę zachowania.</p>
+</div>
+
+<button class="toggle-button">Dylan</button>
+<div class="toggle-content">
+    <p>Imię: Dylan<br>
+Nazwisko: Hawke<br>
+Wygląd zewnętrzny: Dylan jest wyższy od Madison, o smukłej, ale wyraźnie umięśnionej sylwetce — ktoś, kto przywykł do fizycznej pracy. Ma rozjaśnione od słońca, ciemne włosy, zwykle lekko potargane, i ciepłe, orzechowo-bursztynowe oczy, które potrafią spojrzeć łagodnie, ale też uważnie analizować sytuację. Twarz ma prostą, z wyraźną linią szczęki i delikatnym, naturalnym zarośnięciem; na łuku brwiowym widać niewielkie, stare bliznę — pozostałość po jednej z dawnych przygód. Uśmiech Dylana jest szczery i rozbrajający, głos niski, trochę chropawy, z nutą spokoju.
+Ubiór: Zwykle nosi praktyczne, niekrępujące ruchów ubrania — skórzana kurtka lub robocza kamizelka, proste lniane koszule i wygodne buty. Jego rzeczy są lekko podniszczone, bo woli funkcjonalność od ozdób. Zawsze ma przy sobie mały, prosty naszyjnik z medalikiem rodzinnym i materiałową bransoletkę, którą kiedyś zrobił dla Madison — trzyma ją przy sobie jak talizman.<br>
+Charakter i upodobania: Dylan jest opiekuńczy, odpowiedzialny i spokojny. Ma w sobie naturalny instynkt ochrony — częściej woli wziąć ciężar na siebie niż obciążać innych. Lubi proste przyjemności: poranną kawę, długie spacery poza miastem, naprawianie mechanizmów i drobnych urządzeń oraz słuchanie starych pieśni. Jest praktyczny i rozważny, ale nie pozbawiony romantyzmu — kocha Madison szczerze i uczciwie, co widać w drobnych gestach.<br>
+Słabości / nawyki: Czasami znika w myślach i bierze na siebie więcej, niż powinien — ukrywa część problemów, żeby chronić bliskich. To skłonność do samotnego rozwiązywania problemów sprawiła, że musiał nagle wyjechać, zostawiając Madison bez wytłumaczenia (zapisanego jedynie w krótkim liście). Ma tendencję do milczenia o swoich lękach, co bywa źródłem nieporozumień.
+Magia / umiejętności: Nie jest typowym arkanistą — jego moc jest bardziej praktyczna niż spektakularna. Zna podstawy ochronnych zaklęć i prostych run, potrafi też posługiwać się narzędziami i mechanizmami (często łączy technikę z prostą magią użytkową). To człowiek czynu: jeśli coś trzeba naprawić lub zabezpieczyć — zrobi to.<br>
+Dodatkowe cechy: Dylan zostawił Madison list z prośbą o ostrożność i obietnicą miłości; ten gest pokazuje jego głębokie przywiązanie, ale też to, że miał powód, by odejść (sprawy rodzinne, obowiązek). W jego kieszeni może kryć się jeszcze coś, co będzie miało znaczenie w dalszej historii — stary klucz, notatka czy fragment mapy.</p>
+</div>
+
+<button class="toggle-button">Nino</button>
+<div class="toggle-content">
+    <p>Imię: Nino<br>
+Nazwisko: Althar<br>
+Wygląd zewnętrzny: Nino jest niewysoki, szczupły i lekko krępy, o delikatnej budowie ciała, która zdradza, że nie jest typowym wojownikiem, ale intelektualistą. Ma ciemne, lekko kręcone włosy, które często opadają mu na czoło, i duże, jasne, niemal srebrzyste oczy, które zawsze wydają się uważnie obserwować wszystko dookoła. Jego twarz jest łagodna, z miękkimi rysami i lekkim zarostem, który dodaje mu powagi, mimo młodego wieku. Zwykle wydaje się zamyślony, niemal nieobecny, jakby cały czas analizował coś w głowie.<br>
+Ubiór: Nino nosi proste szaty w odcieniach granatu i szarości, wygodne do pracy z eliksirami i księgami. Na pasie często wiesza małe fiolki, pióra i notatniki, a w rękach niemal zawsze trzyma podręcznik lub zestaw mikstur. Jego ubrania są schludne, ale praktyczne – ważniejsze są funkcjonalne kieszenie niż ozdoby. Często nosi okulary z cienkimi, srebrnymi oprawkami, które dodają mu powagi i podkreślają analityczny charakter.<br>
+Charakter i upodobania: Nino jest nieśmiały, cichy i introwertyczny. Najbardziej komfortowo czuje się wśród książek, eliksirów i zadań wymagających precyzji. Lubi spędzać czas na eksperymentach, odkrywaniu nowych receptur i analizowaniu magicznych składników. Jest cierpliwy, dociekliwy i logiczny, choć czasem brak mu pewności siebie w kontaktach z innymi. Lubi pomagać innym w tajemniczy, dyskretny sposób, nie szukając pochwał ani uwagi.
+Słabości / nawyki: Nino bywa nieśmiały w kontaktach społecznych, łatwo się stresuje przy nagłych sytuacjach lub konfliktach. Często wycofuje się, gdy atmosfera staje się zbyt emocjonalna. Ma też skłonność do nadmiernego analizowania, co czasem spowalnia jego działanie.<br>
+Magia / umiejętności: Nino jest geniuszem od eliksirów i magicznych mikstur. Potrafi tworzyć mikstury lecznicze, wzmacniające, a także eksperymentalne eliksiry, które często mają nieprzewidywalne efekty. Jego specjalnością są precyzyjne zaklęcia chemiczno-magicze wymagające cierpliwości i skupienia.<br>
+Dodatkowe cechy: Nino uwielbia notować swoje odkrycia w małych zeszytach i czasem dodaje do nich drobne rysunki lub schematy składników. Jego spokojna, uważna natura sprawia, że jest często cichym, lecz niezawodnym wsparciem dla przyjaciół w sytuacjach kryzysowych.</p>
+</div>
+
+<button class="toggle-button">Riven</button>
+<div class="toggle-content">
+    <p>Imię: Riven<br>
+Nazwisko: Noctalis<br>
+Wygląd zewnętrzny: Riven jest wysoki i szczupły, o smukłej sylwetce, która nadaje mu niemal eteryczny wygląd. Jego jasna, porcelanowa skóra kontrastuje z ciemnymi włosami, które opadają mu na ramiona w lekko falujących pasmach. Jego oczy są nietypowe — głęboko purpurowe z lekko czerwonym połyskiem, co zdradza jego półwampirze pochodzenie. Twarz ma wyrazistą, o ostrych rysach, wysokich kościach policzkowych i lekko spiczastych uszach, które dodają mu tajemniczości.<br>
+Ubiór: Riven nosi eleganckie, ciemne szaty z subtelnymi bordowymi zdobieniami. Zwykle są dopasowane, pozwalając mu swobodnie poruszać się, a jednocześnie podkreślają jego smukłą sylwetkę. W chłodniejsze dni zakłada płaszcz z ciemnego aksamitu z kapturem, który dodaje mu dramatyzmu. Na palcach nosi pierścienie z prostymi runami ochronnymi, a przy pasie ma małą sakiewkę z magicznymi drobiazgami.<br>
+Charakter i upodobania: Riven jest romantyczny, tajemniczy i niezwykle czarujący, ale też melancholijny. Lubi samotne spacery po nocnej szkole, czytanie starych ksiąg i obserwowanie gwiazd. Często wchodzi w dyskusje pełne subtelnych aluzji i żartów, choć potrafi też być poważny i refleksyjny. Ma skłonność do dramatyzowania i idealizowania świata, ale równocześnie jest lojalny wobec przyjaciół.<br>
+Słabości / nawyki: Jego półwampirze pochodzenie sprawia, że bywa wrażliwy na światło słoneczne i intensywne emocje innych osób. Często znikąd pojawia się i równie nagle znika, co może irytować otoczenie. Ma tendencję do melancholii i czasem wpada w melancholijne zamyślenia.<br>
+Magia / umiejętności: Riven jest wysoce uzdolniony w zaklęciach iluzji i manipulacji energią emocjonalną, potrafi tworzyć iluzje zarówno wizualne, jak i dźwiękowe. Jego moc półwampira daje mu też pewne zdolności regeneracyjne i zmysłowe, które wykorzystuje w nauce i codziennym życiu w szkole.<br>
+Dodatkowe cechy: Riven uwielbia muzykę i często nuci cicho melodie podczas nauki lub samotnych spacerów. Ma delikatne maniery i sposób poruszania się, który przyciąga uwagę innych, ale sam woli obserwować niż być w centrum uwagi.</p>
+</div>
+
+<button class="toggle-button">Leija</button>
+<div class="toggle-content">
+    <p>Imię: Leija<br>
+Nazwisko: Stormveil<br>
+Wygląd zewnętrzny: Leija jest średniego wzrostu, o szczupłej, zwinnej sylwetce. Ma długie, rude włosy, które opadają luźno na ramiona i często falują w rytm powietrza wokół niej, jakby reagowały na jej nastrój. Jej oczy są jasnozielone i zmienne — czasem jasne jak wiosenne liście, czasem ciemniejsze, burzowe, gdy emocje w niej rosną. Twarz ma lekko okrągłą, z wyraźnymi policzkami i pełnymi ustami, a jej uśmiech bywa rozbrajający i nieprzewidywalny.
+Ubiór: Leija nosi lekkie szaty w odcieniach błękitu i szarości, często ozdobione drobnymi runami pogodowymi. Jej ubrania są elastyczne i praktyczne, pozwalają jej na szybkie ruchy i manipulowanie energią powietrza. Często ma przy sobie szal lub opaskę, która w zależności od jej humoru mieni się kolorami nieba. Na nadgarstkach nosi bransoletki z kryształami, które wzmacniają jej kontrolę nad pogodą.<br>
+Charakter i upodobania: Leija jest zmienna jak wiatr — jej nastrój potrafi zmienić się w kilka chwil. Jest energiczna, ciekawa świata i pełna pomysłów, ale czasem impulsywna i niecierpliwa. Uwielbia wyzwania i eksperymenty z pogodą, a także zabawy, które mogą zaskoczyć innych. Lubi też obserwować naturę, badać zjawiska atmosferyczne i wprowadzać w życie kreatywne rozwiązania.
+Słabości / nawyki: Jej zmienność sprawia, że trudno przewidzieć jej reakcje — bywa nadmiernie impulsywna i łatwo wpada w gniew lub melancholię. Czasem jej humor może wpływać na otoczenie, wprowadzając chaos lub zamieszanie w klasie.<br>
+Magia / umiejętności: Leija jest czarodziejką pogodową — potrafi kontrolować wiatr, deszcz, mgłę i burze w ograniczonym zakresie. Jej umiejętności są bardziej naturalne i intuicyjne niż precyzyjne, ale bardzo efektywne w sytuacjach kryzysowych. Potrafi też wykorzystywać energię atmosferyczną do wzmacniania zaklęć ofensywnych i defensywnych.<br>
+Dodatkowe cechy: Leija jest żywiołowa i spontaniczna. Lubi wyzwania intelektualne i fizyczne, a jej przyjaźń jest cenna, choć czasem trudna do okiełznania. Jej obecność w grupie wnosi dynamikę i energię, a jej uśmiech potrafi rozjaśnić najbardziej ponure miejsca szkoły.</p>
+</div>
+
+<button class="toggle-button">Esteban</button>
+<div class="toggle-content">
+    <p>Imię: Esteban<br>
+Nazwisko: Draven<br>
+Wygląd zewnętrzny: Esteban jest wysoki, muskularny i zwinny, o sylwetce idealnej do dynamicznych akcji i szybkiego poruszania się po szkole. Ma ciemne włosy, zwykle lekko potargane, i przenikliwe, ciemnobrązowe oczy, które zdradzają zadziorny charakter. Na prawym oku nosi opaskę, choć rzadko kiedy jest rzeczywiście potrzebna – dodaje mu jedynie charakteru. Twarz ma ostrą, z wyraźną linią szczęki i pewnym, przewrotnym uśmiechem. Jego ruchy są pewne siebie, czasem przesadne, jakby chciał, aby wszyscy go zauważyli.<br>
+Ubiór: Esteban ubiera się w ciemne, dopasowane szaty szkolne z lekkimi dodatkami, które ułatwiają mu swobodę ruchów. Zwykle ma przy sobie miotłę, a na pasku drobne akcesoria do psot i magicznych eksperymentów. Często nosi rękawice ochronne do lekcji zaklęć bojowych i szalik lub pas w ciemnych kolorach, który dodaje mu nonszalancji.<br>
+Charakter i upodobania: Esteban jest zadziorny, pewny siebie i niezależny. Uwielbia psoty, rywalizację i bycie w centrum uwagi. Ma silne poczucie humoru, często sarkastyczne, i nie stroni od prowokacji wobec nauczycieli i uczniów. Mimo pozornej lekkości jest inteligentny i sprytny, potrafi przewidzieć ruch przeciwnika i znaleźć wyjście z trudnych sytuacji.<br>
+Słabości / nawyki: Jego lekkomyślność i brak szacunku do zasad może prowadzić do kłopotów. Czasami lekceważy konsekwencje swoich działań i wpada w tarapaty. Ma tendencję do zbyt szybkiego oceniania ludzi po pierwszym wrażeniu, co czasem utrudnia mu współpracę.<br>
+Magia / umiejętności: Esteban specjalizuje się w zaklęciach bojowych i magicznych sztuczkach ofensywnych. Jest zręczny w użyciu miotły, zaklęć zręcznościowych i szybkich ataków magicznych. Potrafi też improwizować w trudnych sytuacjach, tworząc własne, skuteczne kombinacje zaklęć.<br>
+Dodatkowe cechy: Esteban ma naturalną charyzmę i zmysł do wciągania innych w przygody lub psoty. Mimo że wydaje się niefrasobliwy, potrafi w krytycznych momentach wykazać się lojalnością i odwagą wobec przyjaciół. Jego obecność w szkole wnosi napięcie, dynamikę i humor w równych proporcjach.</p>
+</div>
+
+<button class="toggle-button">Zarya</button>
+<div class="toggle-content">
+    <p>Imię: Zarya<br>
+Nazwisko: Flameheart<br>
+Wygląd zewnętrzny: Zarya jest kobietą w średnim wieku o silnej, atletycznej sylwetce, która od razu zdradza, że jest mistrzynią zaklęć bojowych. Ma długie, ognisto-rude włosy, które często nosi związane w wysoki kucyk, odsłaniając delikatnie opaloną twarz z wyraźnymi kośćmi policzkowymi. Jej oczy są intensywnie zielone, przenikliwe i bystre, zawsze wnikliwe w to, co dzieje się wokół. Twarz ma wyrazistą, z mocnym, zawadiackim uśmiechem, który potrafi rozbroić uczniów lub wywołać w nich respekt.<br>
+Ubiór: Zarya nosi praktyczne, dopasowane szaty w odcieniach czerwieni i pomarańczy, które pozwalają jej swobodnie wykonywać dynamiczne ruchy podczas nauki zaklęć. Jej rękawy i pas są często ozdobione runami ochronnymi i symbolami bojowymi. Na nadgarstkach nosi skórzane opaski, które pomagają kontrolować energię podczas potężniejszych zaklęć. Często ma przy sobie różdżkę i niewielkie sakiewki z eliksirami lub artefaktami.<br>
+Charakter i upodobania: Zarya jest odważna, pewna siebie i bezpośrednia. Lubi wyzwania i oczekuje od uczniów pełnego zaangażowania. Ma charakter surowy, ale sprawiedliwy — nigdy nie karze bez powodu i zawsze docenia wysiłek. Jest zabawna w sposób subtelny, często rzuca sarkastyczne komentarze, ale w trudnych sytuacjach potrafi wykazać się empatią i wsparciem. Uwielbia treningi, testy zdolności i obserwowanie, jak uczniowie rozwijają swoje umiejętności.<br>
+Słabości / nawyki: Zarya bywa niecierpliwa wobec powolnych lub niezdecydowanych uczniów. Czasem działa impulsywnie, kierując się instynktem i doświadczeniem zamiast przemyślanej strategii. Ma tendencję do przesadnego nadzorowania klas i zadań, co może być męczące dla bardziej niezależnych uczniów.<br>
+Magia / umiejętności: Zarya jest mistrzynią zaklęć bojowych i defensywnych. Potrafi kontrolować energię magiczną w dynamiczny sposób, tworząc barierki ochronne, ofensywne wybuchy i kombinacje zaklęć, które ćwiczy z uczniami. Jej technika łączy precyzję z mocą, a jej doświadczenie sprawia, że potrafi przewidzieć ruch przeciwnika i reagować natychmiast.<br>
+Dodatkowe cechy: Zarya uwielbia obserwować rozwój uczniów i czasem używa nietypowych metod nauczania, by sprawdzić ich kreatywność i odwagę. Jej obecność w szkole wnosi poczucie bezpieczeństwa, dyscypliny, ale też wywołuje respekt i podziw.</p>
+</div>
+
+<button class="toggle-button">Vael</button>
+<div class="toggle-content">
+    <p>Imię: Vael<br>
+Nazwisko: Illusorin<br>
+Wygląd zewnętrzny: Vael jest wysoki i smukły, o eleganckiej, lekko szlachetnej sylwetce. Ma jasne, błękitne oczy, które zdają się przenikać na wskroś każdego, kogo obserwuje, i ciemne włosy, lekko falowane, sięgające ramion. Jego twarz jest wyrazista, o ostrych rysach i delikatnym, tajemniczym uśmiechu, który czasem zniekształca perspektywę obserwatora — jakby był częścią iluzji, którą sam tworzy. Często porusza się w sposób płynny i niemal bezszelestny, a jego gesty są precyzyjne i pełne gracji.<br>
+Ubiór: Vael nosi długie, granatowe i srebrzyste szaty, które falują przy każdym ruchu i sprawiają wrażenie, że powietrze wokół niego drży. Jego ubrania są ozdobione subtelnymi runami iluzji i błyszczącymi detalami, które zmieniają się w zależności od kąta patrzenia. Na palcach nosi pierścienie z kryształami, które wzmacniają jego zdolności manipulowania percepcją. Często trzyma w dłoni różdżkę lub cienką laskę o ozdobnej końcówce.<br>
+Charakter i upodobania: Vael jest spokojny, analityczny i pełen subtelnego humoru. Uwielbia obserwować zachowania innych, testować ich percepcję i wprowadzać drobne zakłócenia w postrzeganiu rzeczywistości. Jest cierpliwy i często wydaje się nieobecny, choć w rzeczywistości rejestruje każdy szczegół. Ceni inteligencję, kreatywność i zdolność do szybkiego myślenia u uczniów.<br>
+Słabości / nawyki: Vael bywa zdystansowany i nieprzewidywalny, co może zrażać mniej pewnych siebie uczniów. Jego zamiłowanie do iluzji czasem prowadzi do manipulacji sytuacjami, co bywa odbierane jako nieufność lub prowokacja. Nie zawsze ujawnia pełnię swoich intencji, co bywa źródłem niepokoju dla innych.<br>
+Magia / umiejętności: Vael jest mistrzem iluzji. Potrafi manipulować wzrokiem, słuchem, a nawet percepcją dotyku, tworząc realistyczne obrazy i sytuacje, które mogą oszukać nawet najbardziej wyczulone zmysły. Jego umiejętności obejmują tworzenie pozorów, kamuflaż, odwracanie uwagi oraz tworzenie iluzorycznych przeciwników lub przeszkód.<br>
+Dodatkowe cechy: Vael ma zamiłowanie do zagadek i łamigłówek. Często stawia uczniom wyzwania, które wymagają sprytu i logicznego myślenia, a nie tylko siły magicznej. Jego obecność w szkole wnosi element tajemnicy, fascynacji i wyzwania intelektualnego, inspirując uczniów do rozwijania własnych umiejętności.</p>
+</div>
+
+<button class="toggle-button">Caldus</button>
+<div class="toggle-content">
+    <p>Imię: Caldus<br>
+Nazwisko: Veyron<br>
+Wygląd zewnętrzny: Caldus jest starszym mężczyzną w podeszłym wieku, o wysokiej i wyprostowanej sylwetce, która zdradza dawną siłę i autorytet. Ma siwe włosy zaczesane do tyłu, częściowo przerzedzone, i krótko przyciętą siwą brodę. Jego oczy są stalowo-szare, przenikliwe i wywołują respekt wśród uczniów i nauczycieli. Twarz ma mocno zarysowaną, z głębokimi zmarszczkami podkreślającymi doświadczenie i mądrość. Jego spojrzenie jest spokojne, ale władcze, a uśmiech, choć rzadki, potrafi rozładować napięcie w trudnych chwilach.<br>
+Ubiór: Caldus nosi długie, majestatyczne szaty w odcieniach granatu i srebra, ozdobione subtelnymi runami ochronnymi i symbolami szkoły. Na ramionach czasem spoczywa płaszcz z haftem przedstawiającym pradawne zaklęcia obronne. Zawsze ma przy sobie starą, elegancką różdżkę i pierścień z magicznym kryształem, który wzmacnia jego percepcję i zdolności kontrolne.<br>
+Charakter i upodobania: Caldus jest spokojny, mądry i niezwykle wyważony. Jest dyrektorem, który ceni dyscyplinę, ale też rozumie potrzeby uczniów i nauczycieli. Jego decyzje są przemyślane, a działania zawsze ukierunkowane na dobro szkoły i rozwój uczniów. Lubi obserwować rozwój magiczny młodych adeptów, a także analizować sytuacje, zanim podejmie decyzję. Ceni lojalność, odwagę i odpowiedzialność.<br>
+Słabości / nawyki: Jego wiek i powolniejsze tempo sprawiają, że czasem inni mogą poczuć się szybszymi lub bardziej energicznymi w działaniu, lecz jego doświadczenie często rekompensuje wszelkie fizyczne ograniczenia. Ma też skłonność do nadmiernego planowania, czasem komplikując sytuacje prostymi rozwiązaniami.<br>
+Magia / umiejętności: Caldus jest mistrzem magii ochronnej i obronnej, specjalizuje się w zaklęciach ochronnych, silnych barierach magicznych i pradawnych runach. Jego wiedza obejmuje zarówno teoretyczne, jak i praktyczne aspekty starożytnej magii. Potrafi też oceniać, które zaklęcia i artefakty są bezpieczne, a które nie, co czyni go niezastąpionym w szkolnej administracji magicznej.<br>
+Dodatkowe cechy: Caldus ma dar spostrzegawczości — potrafi wyczuć napięcie, zakłócenia magiczne, a nawet subtelne zmiany w zachowaniu uczniów. Jest symbolem autorytetu, spokoju i mądrości w Szkole Magii X, a jego obecność wzbudza respekt i poczucie bezpieczeństwa.</p>
+</div>
+
+<div class="back">
+    <a href="szkola-magii-x.html">← Wróć do listy rozdziałów</a>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.toggle-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
